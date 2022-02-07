@@ -1,0 +1,126 @@
+.hero__wrapper { 
+}
+.hero {
+    padding: 20rem 0;
+    text-align: center;
+    position: relative;
+}
+.hero__block {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+    margin-bottom: 5rem;
+}
+.hero .title {
+    margin-bottom: 2rem;
+}
+.hero .text {
+    margin-bottom: 3rem;
+}
+.hero__img {
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.contacts__wrapper {
+    background-color: var(--first-brand-color);
+}
+.contacts {
+    padding: 15rem 0;
+    text-align: center;
+}
+.contacts .sub-title {
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+.contacts__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacts__item svg {
+    display: block;
+    margin-right: 1.5rem;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.policy__wrapper {
+    background-color: var(--fourth-brand-color);
+}
+.policy {
+    padding: 20rem 0 15rem;
+    text-align: center;
+}
+.policy .sub-title {
+   margin-bottom: 2rem;
+}
+.policy .text {
+    margin-bottom: 3rem;
+ }
+.policy__list {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.policy__item:not(:last-child) {
+    margin-bottom: 12rem;
+}
+
+.phrase__wrapper {
+    background-color: var(--third-brand-color);
+}
+.phrase {
+    padding: 15rem 0;
+    text-align: center;
+}
+.phrase .title {
+   color: var(--sub-text-color);
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 15rem 0;
+  }
+  .hero__block {
+    margin: 0;
+    text-align: right;
+  }
+  .hero__img {
+    margin: 0;
+    max-width: 80rem;
+  }
+
+  .contacts__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .contacts__item-link .text {
+      position: relative;
+  }
+  .contacts__item-link .text::after {
+      content: '';
+    position: absolute;
+   transition: all 0.3s ease-in-out;
+   display: block;
+   left: 0;
+   width: 0;
+   bottom: 0;
+   height: 0.1rem;
+   background-color: var(--main-text-color);
+  }
+  .contacts__item-link:hover .text::after {
+    width: 100%;
+  }
+  .contacts__item-link:hover  {
+    cursor: pointer;
+  }
+}
