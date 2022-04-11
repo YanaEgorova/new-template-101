@@ -15,6 +15,12 @@ body.open-menu {
     justify-content: space-between;
     height: 8rem;
 }
+.disable-btn {
+    pointer-events: none;
+}
+.disable-btn svg {
+    opacity: 0.3;
+}
 .header__btn-block {
     height: 100%;
     display: flex;
